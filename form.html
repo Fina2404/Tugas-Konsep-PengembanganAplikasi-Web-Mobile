@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Lomba Olahraga</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pendaftaran Peserta Lomba Olahraga</h1>
+        <p>Isi formulir di bawah ini untuk mendaftar.</p>
+    </header>
+
+    <main>
+        <article>
+            <form action="#" method="post">
+                <!-- Input Nama -->
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <!-- Input Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Input Nomor Telepon -->
+                <label for="nomor">Nomor Telepon:</label>
+                <input type="tel" id="nomor" name="nomor" required>
+
+                <!-- Input Tanggal Lahir -->
+                <label for="tanggal">Tanggal Lahir:</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+
+                <!-- Select Jenis Kelamin -->
+                <label for="gender">Jenis Kelamin:</label>
+                <select id="gender" name="gender">
+                    <option value="pria">Pria</option>
+                    <option value="wanita">Wanita</option>
+                </select>
+
+                <!-- Radio Button untuk Kategori Lomba -->
+                <label>Kategori Lomba:</label>
+                <div class="radio-group">
+                    <div>
+                        <input type="radio" id="futsal" name="kategori" value="futsal" required>
+                        <label for="futsal">Futsal</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="basket" name="kategori" value="basket" required>
+                        <label for="basket">Basket</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="voli" name="kategori" value="voli" required>
+                        <label for="voli">Voli</label>
+                    </div>
+                </div>
+
+                <!-- Textarea untuk Pesan Tambahan -->
+                <label for="pesan">Pesan Tambahan:</label>
+                <textarea id="pesan" name="pesan" rows="4" placeholder="Masukkan pesan Anda..."></textarea>
+
+                <!-- Input Metode Pembayaran -->
+                <label for="metode-pembayaran">Metode Pembayaran:</label>
+                <select id="metode-pembayaran" name="metode-pembayaran" required>
+                    <option value="">Pilih Metode Pembayaran</option>
+                    <option value="transfer">Transfer Bank</option>
+                    <option value="cash">Tunai</option>
+                    <option value="credit-card">Kartu Kredit</option>
+                </select>
+
+                <!-- Input Kontak Darurat -->
+                <label for="kontak-darurat">Kontak Darurat:</label>
+                <input type="tel" id="kontak-darurat" name="kontak-darurat" placeholder="Nomor Kontak Darurat" required>
+
+                <!-- Checkbox untuk Syarat dan Ketentuan -->
+                <div>
+                    <input type="checkbox" id="syarat-ketentuan" name="syarat-ketentuan" required>
+                    <label for="syarat-ketentuan">Saya menyetujui syarat dan ketentuan yang berlaku.</label>
+                </div>
+
+                <!-- Tombol Submit -->
+                <button type="submit">Kirim</button>
+            </form>
+        </article>
+
+        <aside>
+            <img src="sports.jpg" alt="Foto Lomba" width="100%">
+            <div class="biodata">
+                <h2>Tentang Lomba</h2>
+                <p>Lomba olahraga ini terdiri dari berbagai cabang seperti fustal, basket dan voli. Ikuti acara seru ini dan menangkan hadiah menarik!</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lomba Olahraga Nasional. Semua hak dilindungi.</p>
+    </footer>
+
+</body>
+</html>
